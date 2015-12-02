@@ -11,7 +11,20 @@
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="ListaUsuario.php">Usuários</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administração <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">Cadastro de Usuarios</a></li>
+					<li><a href="#">Cadastro de Perguntas</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+					<li class="divider"></li>
+					<li><a href="#">One more separated link</a></li>
+				</ul>
+        	</li>
+				<li><a href="ListaUsuarios.php">Usuários</a></li>
+				<li><a href="JogoPerguntas.php">Jogar</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><?php if (isset($_SESSION["logado"])) { ?><a href="logout.php">sair</a><?php } ?></li>
@@ -19,3 +32,4 @@
 			</div>
 		</div>
 	</nav>
+	
