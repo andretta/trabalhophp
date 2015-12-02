@@ -15,9 +15,7 @@ Nome: <input type="text" name="nome" required><br><br>
 Login: <input type="text" name="login" required><br><br>
 Senha: <input type="text" name="senha" required><br><br>
 
-@$btn =$_POST["submit"];
-@$a = $_POST["login"];
-@$b = $_POST["senha"];
+
 
 <form name="Cadastro" method="POST" action="lista.php">
 <input type="submit" name="submit" class="sb" value="Salvar" align ="left" />
