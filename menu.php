@@ -15,15 +15,11 @@
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administração <span class="caret"></span></a>
 				<ul class="dropdown-menu" role="menu">
 					<li><a href="CadastraUsuario.php">Cadastro de Usuarios</a></li>
-					<li><a href="#">Cadastro de Perguntas</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-					<li class="divider"></li>
-					<li><a href="#">One more separated link</a></li>
+					<li><a href="CadastraPerguntas.php">Cadastro de Perguntas</a></li>
 				</ul>
         	</li>
 				<li><a href="ListaUsuarios.php">Lista de Usuários</a></li>
+				<li><a href="ListaPerguntas.php">Lista de Perguntas</a></li>
 				<li><a href="JogoPerguntas.php">JOGAR</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">

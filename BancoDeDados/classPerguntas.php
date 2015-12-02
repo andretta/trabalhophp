@@ -26,9 +26,9 @@ Class perguntas{
 		return $rs;
     }
 	
-	function insercao($pergunta, $nivel, $resposta1,$resposta2,$resposta13,$resposta4,$respostaCerta){
+	function insercao($pergunta, $nivel, $resposta1,$resposta2,$resposta3,$resposta4,$respostaCerta){
         $mySQL = new MySQL;
-		$sql = "Insert into perguntas (id,pergunta, nivel, resposta1,resposta2,resposta13,resposta4,respostaCerta) values (null,'$pergunta', '$nivel', '$resposta1','$resposta2','$resposta13','$resposta4','$respostaCerta')";
+		$sql = "Insert into perguntas (id,pergunta, nivel, resposta1,resposta2,resposta3,resposta4,respostaCerta) values (null,'$pergunta', '$nivel', '$resposta1','$resposta2','$resposta3','$resposta4','$respostaCerta')";
 		echo $sql;
 		$rs = $mySQL->executeQuery($sql);
 		$mySQL->disconnect;
@@ -36,7 +36,7 @@ Class perguntas{
     }
 	
 	//UPDATE
-    function atualizar($pergunta, $nivel, $resposta1,$resposta2,$resposta13,$resposta4,$respostaCerta){
+    function atualizar($id,$pergunta, $nivel, $resposta1,$resposta2,$resposta3,$resposta4,$respostaCerta){
         $mySQL = new MySQL;
 		$sql = "update perguntas set pergunta = '$pergunta', nivel = '$nivel', resposta1='$resposta1',resposta2='$resposta2',resposta3='$resposta3',resposta4='$resposta4',respostaCerta='$respostaCerta'  where id = $id";
 		$rs = $mySQL->executeQuery($sql);
