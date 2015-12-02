@@ -28,7 +28,7 @@ Class usuarios{
 	
 	function insercao($login,$senha,$nome){
         $mySQL = new MySQL;
-		$sql = "Insert into usuarios (id,login, senha, nome) values (null, '$login', '$senha','$nome',)";
+		$sql = "Insert into usuarios (id,login, senha, nome) values (null, '$login', '$senha','$nome')";
 		echo $sql;
 		$rs = $mySQL->executeQuery($sql);
 		$mySQL->disconnect;
