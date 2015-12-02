@@ -11,7 +11,7 @@ Class perguntas{
     }
 	
 	//SELECT ID
-    function selecionaid($id){
+    function seleciona($id){
         $mySQL = new MySQL;
 		$rs = $mySQL->executeQuery("SELECT * FROM perguntas where id=$id;");
 		$mySQL->disconnect;
