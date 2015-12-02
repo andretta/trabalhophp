@@ -3,8 +3,8 @@
 <?php ################################ ?>
 
 <div class="jumbotron">
-  <h1>Trabalho</h1>
-  <p>escreve aqui algo sobre o trabalho e deixa de ser vgabundo.</p>
+  <h1>Jogo de Perguntas</h1>
+  <p>Jogo de Perguntas da cadeira de Programação para Internet 1</p>
 </div>
 
 <?php ################################ ?>

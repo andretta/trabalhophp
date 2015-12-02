@@ -21,14 +21,17 @@ $rs = $con->seleciona();  //Seleciona
 		{
 			$id				= $resultado["id"];
 			$nome			= $resultado["nome"];
+			$login			= $resultado["login"];
 	?>
 	
 	<tr>
 		<td><?php echo $id ?></td>
 		<td><?php echo $nome ?></td>	
+		<td><?php echo $login ?></td>
 			
-		<td><a href='EditaUsuario.php'> Editar </a></td>		
-		<td><a href='#'> Excluir </a> </td>
+		<td><a href='EditaUsuario.php?ID=<?=$resultado["id"];?>'> Editar </a></td>	
+			
+		<td><a href='ExcluiUsuario.php?ID=<?=$resultado["id"];?>'> Excluir </a> </td>
 	<?php }	?>
 	</tr>
 </table>

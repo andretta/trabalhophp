@@ -26,19 +26,19 @@ Class usuarios{
 		return $rs;
     }
 	
-	function insercao($login,$senha,$nome){
+	function insercao($nome,$login,$senha){
         $mySQL = new MySQL;
-		$sql = "Insert into usuarios (id,login, senha, nome) values (null, '$login', '$senha','$nome')";
+		$sql = "Insert into usuarios (id,nome, login, senha) values (null,'$nome','$login','$senha')";
 		echo $sql;
 		$rs = $mySQL->executeQuery($sql);
-		$mySQL->disconnect;
+		@$mySQL->disconnect;
 		return $rs;
     }
 	
 	//UPDATE
-    function atualizar($id, $login,$senha,$nome,$email){
+    function atualizar($id, $nome,$login,$senha){
         $mySQL = new MySQL;
-		$sql = "update usuarios set login = '$login', senha = '$senha', nome='$nome'  where id = $id";
+		$sql = "update usuarios set nome = '$nome', login = '$login', senha='$senha'  where id = $id";
 		$rs = $mySQL->executeQuery($sql);
 		//echo $sql;
 		$mySQL->disconnect;
