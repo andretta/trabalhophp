@@ -1,7 +1,22 @@
 <?php include 'cabecalho.php';?>
-<?php ################################ ?>
+<?php
+session_start();
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+{
+  $_SESSION["logado"] = "ok";
+	header("location: index.php");
+	exit();
+}
 
-<form class="form-horizontal">
+?>
+<?php ################################ ?>
+<style>
+  form {
+    width: 400px;
+    margin: auto;
+  }
+</style>
+<form class="form-horizontal" method="POST">
   <fieldset>
     <legend>Insira seu login</legend>
     <div class="form-group">

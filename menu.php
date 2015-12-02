@@ -11,10 +11,10 @@
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="usuarios.php">Usuários</a></li>
+				<li><a href="ListaUsuario.php">Usuários</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="logout.php">sair</a></li>
+				<li><?php if (isset($_SESSION["logado"])) { ?><a href="logout.php">sair</a><?php } ?></li>
 			</ul>
 			</div>
 		</div>
